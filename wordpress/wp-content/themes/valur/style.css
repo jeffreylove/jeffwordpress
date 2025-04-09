@@ -6,6 +6,25 @@ Author URI:    https://www.itsonmedia.com/
 Description:   WooCommerce Theme
 Version:       1.0.0
 */
+
+/* Global Color Palette */
+:root {
+  /* Brand Colors */
+  --color-purple: #635BFF;
+  --color-green: #5BFACD;
+  --color-blue: #00D4FF;
+  --color-pink: #FF60BD;
+  --color-grey: #CAD5F3;
+  
+  /* Additional UI colors */
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-dark: #0F1C2C;
+  
+  /* Legacy colors - to be phased out */
+  --color-legacy-gold: #cb9e44;
+}
+
 /*@import url("../fonts/fonts.css");*/
 
 @font-face {
@@ -329,20 +348,17 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 /*Lost Password End*/
 
 /* Custom Design Btn */
-.designBtn{ border-radius: 5px; border: 1px solid #635BFF; position: relative; overflow: hidden; transition: all 0.5s ease-in; z-index: 1; color: #FFF; font-size: 14px; font-weight: 500; padding: 12px 16px; width: AUTO; display: inline-block; background: #635BFF; } 
-.designBtn::before, .designBtn::after { content: ''; position: absolute; top: 0; width: 0; height: 100%; transform: skew(15deg); transition: all 0.5s; overflow: hidden; z-index: -1; } 
-.designBtn::before { left: -10px; background: #0F1C2C; } 
-.designBtn::after { right: -10px; background: #0F1C2C; } 
-.designBtn:hover::before, .designBtn:hover::after { width: 58%; } 
-.designBtn:hover{ color: #FFF; transition: 0.3s; border-color:#0F1C2C; }
+.designBtn{ border-radius: 5px; border: 1px solid #635BFF; position: relative; overflow: hidden; transition: all 0.5s ease-in; z-index: 1; color: #FFF; font-size: 14px; font-weight: 500; padding: 12px 16px 12px 24px; width: AUTO; display: inline-block; background: #635BFF; } 
+ 
+.designBtn:hover{ color: #FFF; transition: 0.3s; border-color: #7A73FF; background-color: #7A73FF;}
 
 
 /* Header Starts */
-header{background: #F6F6F6;}
+header{background: #FFFFFF;}
 header .row.firstRow{display: flex;align-items: center;padding: 20px 0px;border-bottom: 1px solid #000;}
 header .row.secondRow{display: flex;align-items: center;padding: 12px 0px;}
 header .row .col-md-3.last{padding:0px !important;}
-header .hLogo img{width: 130px;}
+header .hLogo img{height: 20px !important; width: auto !important; max-height: 20px !important; padding: 0 !important; margin: 0 !important; line-height: 1 !important;}
 header .firstRow .logocol{padding-left:0px !important}
 header .navigation .navbar .container-fluid{margin: 0px !important;padding:0px !important;}
 header .navigation .navbar{display: flex;align-items: center;justify-content: center;}
@@ -355,14 +371,66 @@ header .navigation #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-ite
 /* header .navigation #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link::after{width:100%;} */
 header .navigation #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item a::after{content:"";position:absolute;width:0;height:2px; background-color:#635BFF;display:block;transition:0.5s; }
 header .navigation #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item:hover a::after{width:100%;}
+
+/* Custom navigation styles for static menu */
+header .navigation .nav.navbar-nav li a { color: #000000; transition: color 0.3s ease; }
+header .navigation .nav.navbar-nav li a:hover { color: #666666; }
 header #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link{background:transparent !important;}
-header .designBtn{background: #0F1C2C;border: 1px solid #0F1C2C; }
-header .designBtn:hover{ border-color:#635BFF;  }
-header .designBtn::before,header .designBtn::after {background: #635BFF; } 
-header .designBtn i{font-size: 12px; margin-left: 6px;}
+/* Talk to our team button - main purple with white text */
+header .designBtn {
+    background: #635BFF;
+    border: 1px solid #635BFF;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    min-width: 180px;
+}
+
+header .designBtn:hover {
+    background: #7A73FF;
+    border-color: #7A73FF;
+    color: #FFFFFF;
+}
+
+header .designBtn i {
+    font-size: 14px;
+    margin-left: 8px;
+    line-height: 1;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+}
+
+/* We're using Font Awesome icon instead of CSS pseudo-element for the arrow */
+
+
 header .hBtn{text-align:right;}  
-header .designBtn2{color: #635BFF; font-size: 18px; font-weight: 600;margin-left: 20px;}
-header .designBtn2:hover{}
+/* Log in button - light purple with purple text, no arrow */
+header .designBtn2 {
+    background-color: #E7E5FF;
+    color: #635BFF;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+    white-space: nowrap;
+    min-width: 100px;
+}
+
+header .designBtn2:hover {
+    background-color: #D9D6FF;
+    text-decoration: none;
+}
 header .hBtn p{display: flex;align-items: center;}
 header .hSearch{border-radius: 5px; border: 0.5px solid #000; background: #FFF; padding: 10px;display: flex; align-items: center;}
 header .hSearch i { font-size: 18px; margin: 0px 15px 0px 5px; position: relative; top: 1px; color: #635BFF; }
@@ -665,8 +733,8 @@ footer .row{display:flex;}
 /* header .row.firstRow { display: block; align-items: center; padding: 20px 0px; border-bottom: 1px solid #000; }	 */
 header .row.firstRow { display: block; position:relative;    padding: 10px 0px;}
 header { padding: 10px 0px; }
- header .hLogo { position: absolute; z-index: 999; top: 9px; left: 20px; }
-header .hLogo img { width: 100px; }
+ header .hLogo { position: absolute; z-index: 999; top: 9px; left: 20px; line-height: 1 !important; height: 20px !important; }
+header .hLogo img { height: 20px !important; width: auto !important; max-height: 20px !important; padding: 0 !important; margin: 0 !important; line-height: 1 !important; }
 header #mega-menu-wrap-primary .mega-menu-toggle { background: transparent;}
 header #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner, #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before, #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after {background-color: #3d18d6;}
 header .navigation .navbar { display: block;}
