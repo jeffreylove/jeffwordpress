@@ -54,15 +54,13 @@ $('ul').children('li:last-child').addClass('last');
 	$(document).ready(function() {
   // Swiper: Slider
       new Swiper('.blogSwiper-container', {
-          loop: true,
+          loop: false,
           navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
          },
-      speed: 2000,
-        autoplay: {
-          delay: 5000,
-        },
+      speed: 0, // Disabled animations by setting speed to 0
+        autoplay: false, // Disabled autoplay
 		  pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -73,6 +71,12 @@ $('ul').children('li:last-child').addClass('last');
           slidesPerView:1,
           paginationClickable: true,
           spaceBetween: 20,
+          effect: 'fade', // Use fade effect for no sliding animation
+          fadeEffect: {
+            crossFade: false // Disable crossfade effect
+          },
+          initialSlide: 0, // Start with the first slide
+          simulateTouch: false // Disable touch simulation
       });
   });
 	

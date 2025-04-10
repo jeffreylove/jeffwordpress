@@ -556,4 +556,75 @@
 
 
 		</header>
+
+		<!-- Featured Articles Carousel Section -->
+		<div class="blogSliderSection">
+			<div class="container">
+				<div class="featured-articles-grid">
+					<?php
+					// Define the category name or slug
+					$category_name = 'Featured Article';
+
+					// Create a custom query to get posts from the 'Featured Article' category
+					$featured_query = new WP_Query( array(
+						'category_name' => $category_name,
+						'posts_per_page' => 3 // Limit to 3 posts for the featured layout
+					) );
+
+					// Check if the query has posts
+					if ( $featured_query->have_posts() ) : 
+						// Get the first post for the main featured article
+						$featured_query->the_post();
+						// Store the first post ID to exclude it from the small articles
+						$main_post_id = get_the_ID();
+					?>
+					<div class="main-featured-article">
+						<div class="article-flex-container">
+							<?php if (has_post_thumbnail()) : ?>
+							<div class="featured-image">
+								<?php the_post_thumbnail('large'); ?>
+							</div>
+							<?php endif; ?>
+							<div class="article-content">
+								<h3 class="category-label">FEATURED ARTICLE</h3>
+								<h2 style="font-size: 32px !important; line-height: 1.1; font-weight: 300; font-family: 'RecklessNeue', serif;"><a href="<?php the_permalink(); ?>" style="font-size: 32px !important; line-height: 1.1; font-weight: 300; font-family: 'RecklessNeue', serif;"><?php the_title(); ?></a></h2>
+								<div class="excerpt"><?php the_excerpt(); ?></div>
+								<a href="<?php the_permalink(); ?>" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="small-featured-articles">
+						<?php 
+						// Get the next two posts for the small featured articles
+						while ( $featured_query->have_posts() ) : $featured_query->the_post(); 
+						?>
+						<div class="small-featured-article">
+							<div class="article-flex-container">
+								<?php if (has_post_thumbnail()) : ?>
+								<div class="featured-image">
+									<?php the_post_thumbnail('medium'); ?>
+								</div>
+								<?php endif; ?>
+								<div class="article-content">
+									<h3 class="category-label">FEATURED ARTICLE</h3>
+									<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+									<a href="<?php the_permalink(); ?>" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<?php endwhile; ?>
+					</div>
+					<?php
+					// Restore original post data
+					wp_reset_postdata();
+					else :
+						echo '<p>No featured articles found.</p>';
+					endif;
+					?>
+				</div>
+			</div>
+		</div>
+		<!-- End Featured Articles Carousel Section -->
+
 		<div class="container">
