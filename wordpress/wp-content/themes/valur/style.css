@@ -741,16 +741,35 @@ header .fullscreenmenu .blog .read-more{color: #635AFF !important; font-size: 14
 .blogSidebar .subscribeBox input[type=submit]{width: auto; padding: 12px 24px; background: #fff; color: #0F1C2C; border: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; cursor: pointer; display: inline-block;}
 .blogSidebar .subscribeBox input[type=submit]:hover{background: rgba(255, 255, 255, 0.9); transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
 
-.featuredPosts{margin: 45px 0px 25px; color: #000000; font-size: 25px; font-weight: 600; border: 1px solid #000; padding: 30px 20px 10px; font-family: 'racklessNeue-semibold' !important;}
-.featuredPosts .media:nth-child(1){margin-top:10px !important;}
-.featuredPosts .media{display: flex; align-items: center; margin: 0px 0px !important; padding: 13px 0px !important;}	
-.featuredPosts .media img{height: 70px; width: 70px; object-fit: cover; border-radius: 50%;}	
-.featuredPosts .media .entry-title{line-height: 10px;margin-bottom: 5px;padding: 0;}
-.featuredPosts .media .entry-title a{color: #000; font-size: 16px; font-weight: 700; font-family: 'racklessNeue-semibold' !important;}
+.featuredPosts{
+  margin: 45px 0px 25px;
+  background-color: #F4F4F4;
+  background-image: url('images/geometric-background-grey.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 35px 28px 25px;
+  transition: all 0.4s;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+.featuredPosts:hover{box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);}
+.featuredPosts .widget-title, .featuredPosts h2.widgettitle{color: #0F1C2C; font-size: 32px; font-weight: 400; font-family: Georgia, serif; margin-bottom: 20px; position: relative; display: inline-block;}
+.featuredPosts .widget-title:after, .featuredPosts h2.widgettitle:after{content: ''; position: absolute; bottom: -8px; left: 0; width: 40px; height: 3px; background-color: #635BFF; border-radius: 2px;}
+.featuredPosts .media:nth-child(1){margin-top:20px !important;}
+.featuredPosts .media{display: flex; align-items: center; margin: 0px 0px 15px !important; padding: 0px 0px 15px !important; border-bottom: 1px solid rgba(15, 28, 44, 0.1);}	
+.featuredPosts .media img{height: 70px; width: 70px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);}	
+.featuredPosts .media .entry-title{line-height: 1.3; margin-bottom: 8px; padding: 0;}
+.featuredPosts .media .entry-title a{color: #0F1C2C; font-size: 16px; font-weight: 600; font-family: Georgia, serif !important; text-decoration: none; transition: color 0.3s ease;}
+.featuredPosts .media .entry-title a:hover{color: #635BFF;}
 .featuredPosts .media .entry-meta span.st-lp-time{display: none;}
-.featuredPosts .sp-latest-posts-widget.latest-posts .small span{color:#989898;font-weight: 700;}
+.featuredPosts .sp-latest-posts-widget.latest-posts .small span{color:#5b616e; font-size: 13px; font-weight: 600;}
 .featuredPosts .sp-latest-posts-widget.latest-posts .media>.pull-left {width: 1500% !important; }
 .featuredPosts .sp-latest-posts-widget.latest-posts .small span::before{content:"⬤";color:#635BFF;font-size: 10px; position: relative; bottom: 1px;padding-right: 5px;}
+.featuredPosts .media:hover img{transform: scale(1.05);}
 
 .experienceSection { padding-top: 80px !important; padding-bottom: 80px; margin: 0px 200px 90px 200px !important;border-radius: 10px;}
 .experienceSection .vc_col-sm-12{    padding: 0px 50px;}
@@ -775,7 +794,7 @@ body.page-id-123 .blogSidebar .featuredPosts{display:none;}
 .detailSection h2 { margin: 20px 0px; font-size: 35px; color: #000; font-weight: 400; }
 .detailSection strong{}
 .detailSection p { font-size: 18px; color: #000; line-height: 26px; padding-bottom: 15px; }
-.detailSection .btn p{font-weight;500;}
+.detailSection .btn p{font-weight: 500;}
 .detailSection .designBtn {margin: 20px 0px;}
  .detailSection p strong a { font-size: 18px; color: #635BFF; line-height: 26px; padding-bottom: 15px; text-decoration: underline; }
 /*  Estate tax  detail css ends */
