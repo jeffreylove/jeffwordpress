@@ -17,8 +17,74 @@ require_once get_template_directory().'/wp-bootstrap-navwalker.php';
 /*require_once( ABSPATH . WPINC . '/wp-user.php' );*/
 register_nav_menus(array(
     'primary' => __( 'Primary Menu'),
+    'max_mega_menu_1' => __( 'Second Row Menu'),
 ));
 /* END - Menus. - Register Custom Navigation Walker. */
+
+// Add Advisors menu item to the max_mega_menu_1 menu
+function add_advisors_menu_item() {
+    // Get all nav menus
+    $nav_menus = wp_get_nav_menus();
+    
+    if (!empty($nav_menus)) {
+        // Look for the menu that's assigned to max_mega_menu_1 location
+        $locations = get_nav_menu_locations();
+        $menu_id = isset($locations['max_mega_menu_1']) ? $locations['max_mega_menu_1'] : null;
+        
+        // If we can't find it by location, try to find it by name or slug
+        if (!$menu_id) {
+            foreach ($nav_menus as $menu) {
+                // Check if this might be our menu based on name
+                if (strpos(strtolower($menu->name), 'max') !== false || 
+                    strpos(strtolower($menu->name), 'mega') !== false || 
+                    strpos(strtolower($menu->name), 'second') !== false || 
+                    strpos(strtolower($menu->name), 'category') !== false) {
+                    $menu_id = $menu->term_id;
+                    break;
+                }
+            }
+        }
+        
+        // If we still don't have a menu_id, just use the first menu
+        if (!$menu_id && !empty($nav_menus)) {
+            $menu_id = $nav_menus[0]->term_id;
+        }
+        
+        if ($menu_id) {
+            $advisors_url = home_url('/advisors');
+            
+            // Check if the Advisors menu item already exists
+            $existing_items = wp_get_nav_menu_items($menu_id);
+            $advisors_exists = false;
+            
+            if ($existing_items) {
+                foreach ($existing_items as $item) {
+                    if ($item->title == 'Advisors' || strpos($item->url, 'advisors') !== false) {
+                        $advisors_exists = true;
+                        break;
+                    }
+                }
+            }
+            
+            // Add the Advisors menu item if it doesn't exist
+            if (!$advisors_exists) {
+                wp_update_nav_menu_item($menu_id, 0, array(
+                    'menu-item-title' => 'Advisors',
+                    'menu-item-url' => $advisors_url,
+                    'menu-item-status' => 'publish',
+                    'menu-item-type' => 'custom',
+                    'menu-item-position' => 5
+                ));
+                
+                // Log that we added the item
+                error_log('Added Advisors menu item to menu ID: ' . $menu_id);
+            }
+        }
+    }
+}
+
+// Run the function on theme setup
+add_action('after_setup_theme', 'add_advisors_menu_item');
 
 /* Widgets */
 function create_widget($name, $id, $description){
@@ -147,15 +213,40 @@ add_shortcode( 'blog_slider_shortcode', 'blog_slider');
 // for single related post
 function related__grid($atts) {
 	ob_start();
-	// Get the current page number
-// 	$paged = (isset($_GET['paged'])) ? $_GET['paged'] : 1;
 	
+	// Get the current post ID
+	$current_post_id = get_the_ID();
+	
+	// Get the categories of the current post
+	$categories = get_the_category($current_post_id);
+	$category_ids = array();
+	
+	if (!empty($categories)) {
+		foreach ($categories as $category) {
+			$category_ids[] = $category->term_id;
+		}
+	}
+	
+	// Set up the query arguments
 	$args = array(
 		'post_type'      => 'post',
-		'posts_per_page' => 3,  // Display 12 posts per page
-		'order'          => 'ASC',
-// 		'paged'          => $paged,  // Handle pagination
+		'posts_per_page' => 3,
+		'post__not_in'   => array($current_post_id), // Exclude current post
+		'category__in'   => $category_ids, // Posts in the same categories
+		'orderby'        => 'date', // Order by date
+		'order'          => 'DESC', // Most recent first
 	);
+	
+	// If no categories, fall back to recent posts
+	if (empty($category_ids)) {
+		$args = array(
+			'post_type'      => 'post',
+			'posts_per_page' => 3,
+			'post__not_in'   => array($current_post_id),
+			'orderby'        => 'date',
+			'order'          => 'DESC',
+		);
+	}
 
 	$query = new WP_Query($args);
 	?>
@@ -173,7 +264,11 @@ function related__grid($atts) {
 								<?php endif; ?>
 							</div>
 							<div class="contentBox">
+								<h2><?php the_title(); ?></h2>
 								<div class="mergeBox">
+									<div class="author-avatar-small">
+										<?php echo get_avatar( get_the_author_meta('ID'), 24 ); // 24px avatar size ?>
+									</div>
 									<div class="authorBox">
 										<span><?php the_author_posts_link(); ?></span>
 									</div>
@@ -183,7 +278,6 @@ function related__grid($atts) {
 									</div>
 									-->
 								</div>
-								<h2><?php the_title(); ?></h2>
 							</div>
 						</div>
 					</a>

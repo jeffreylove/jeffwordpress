@@ -7,35 +7,55 @@
 </style>
 
 <div class="post-details blogContent">
-	<div class="breadCrumb">
-		<?php echo do_shortcode("[valur_breadcrumb]"); ?>
-	</div>
-	<div class="row blogContentRow">
-		<div class="col-md-5">
-			<div class="imageBox">
-				<?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+	<?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+	
+	<div class="row">
+		<div class="col-md-9">
+			<!-- Featured image contained to article width -->
+			<div class="article-width-image">
 				<?php if(get_the_post_thumbnail()) : ?>
-				<?php the_post_thumbnail('large'); ?>
+				<?php the_post_thumbnail('full'); ?>
 				<?php endif; ?>
 			</div>
 		</div>
-		<div class="col-md-7">
-			<div class="contentBox">
-				<h3><?php the_category(', '); ?></h3>
-				<h1><?php the_title(); ?></h1>
-				<div class="mergeBox">
-					<div class="authorBox">
-						<span><?php the_author_posts_link(); ?></span>
-					</div>
-					<div class="dateBox">
-						<span>Last updated: <?php the_time('d.m.y'); ?></span>
+		<div class="col-md-3"><!-- Sidebar space --></div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-9">
+			<div class="post-meta-container">
+				<!-- Breadcrumbs below image -->
+				<div class="breadCrumb">
+					<?php echo do_shortcode("[valur_breadcrumb]"); ?>
+				</div>
+				
+				<!-- Author and date info -->
+				<div class="post-meta">
+					<div class="mergeBox">
+						<div class="authorBox">
+							<span><?php the_author_posts_link(); ?></span>
+						</div>
+						<div class="dateBox">
+							<span>Last updated: <?php the_time('d.m.y'); ?></span>
+						</div>
 					</div>
 				</div>
+				
+				<!-- Title below meta info -->
+				<h1 class="post-title"><?php the_title(); ?></h1>
 			</div>
 		</div>
+		<div class="col-md-3"><!-- Sidebar space --></div>
 	</div>
 	
 	<div class="row mainRow">
+
+		<div class="col-md-9">
+			<?php the_content(); ?>
+			<div class="content-cta">
+				<a class="designBtn" href="#">TALK TO OUR TEAM <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+		</div>
 
 		<div class="col-md-3">
 			<?php echo do_shortcode('[ez-toc]'); ?>
@@ -63,22 +83,8 @@
 			</div>
 			
 		</div>
-
-		<div class="col-md-9">
-			<?php the_content(); ?>
-		</div>
 	</div>
-	<section class="contactSection">
-		<div class="row">
-			<div class="col-md-4">
-				</div>	
-			<div style="text-align:center !important;" class="col-md-4">
-                 <a class="designBtn" href="#">TALK TO OUR TEAM<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-			</div>
-			<div class="col-md-4">
-				<?php //  echo do_shortcode("[contact-form-7 id='901e458' title='subscription']"); ?>	
-			</div>
-		</div>
+	
 
 
 	</section>
