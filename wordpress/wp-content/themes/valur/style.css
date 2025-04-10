@@ -28,8 +28,8 @@ Version:       1.0.0
 /*@import url("../fonts/fonts.css");*/
 
 @font-face {
-	font-family: 'racklessNeue-semibold';
-	src: url('./fonts/fonts/RecklessNeue-SemiBold.ttf') format('truetype'),
+	font-family: 'RecklessNeue';
+	src: url('./fonts/fonts/RecklessNeue-SemiBold.ttf') format('truetype');
   }
 
 
@@ -70,12 +70,12 @@ li:last-child{margin-bottom: 0;}
 /* END - For Bootstrap */
 body{ font-style:normal; font-variant:normal; font-weight:normal; font-size:14px; line-height:normal; font-family: "Inter", sans-serif; color: #333;
 background-color: #FFF; /* background: #FFF url("../images/bg.jpg") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;	background-size: cover;*/}
-h1{	font-size:32px; font-weight:400;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
-h2{	font-size:30px; font-weight:400;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
-h3{	font-size:24px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
-h4{	font-size:18px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
-h5{	font-size:16px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
-h6{	font-size:14px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
+h1{	font-size:32px; font-weight:400;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'RecklessNeue'; color: #333; }
+h2{	font-size:30px; font-weight:400;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'RecklessNeue'; color: #333; }
+h3{	font-size:24px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'RecklessNeue'; color: #333; }
+h4{	font-size:18px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'RecklessNeue'; color: #333; }
+h5{	font-size:16px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'RecklessNeue'; color: #333; }
+h6{	font-size:14px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'RecklessNeue'; color: #333; }
 p{ font-size:14px; font-weight:normal; line-height:normal; font-style:normal; font-variant:normal; font-family: "Inter", sans-serif; color: #333; }
 span{ font-size:14px; font-weight:normal; line-height:normal; font-style:normal; font-variant:normal; font-family: "Inter", sans-serif; color: #333; }
 li{	font-size:14px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: "Inter", sans-serif; color: #333; }
@@ -140,7 +140,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .login .button:hover{background-color: #000 !important; color: #fff !important; }
 .woocommerce form .form-row label.inline{display: block; padding: 10px 0px;}
 .woocommerce form .form-row label.inline span{font-size: 14px; font-weight: bold;}
-.register label{ }
+.register label{ display: block; }
 .register input{padding: 5px;  border: 1px solid #ccc;}
 .register .button{background-color: #f05d6c !important; color: #fff !important; font-weight: normal !important; text-transform: uppercase; border-radius: 0 !important; padding: 10px 30px !important;}
 .register .button:hover{background-color: #000 !important; color: #fff !important; }
@@ -160,7 +160,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .select2-results__option[aria-selected], .select2-results__option[data-selected]{display:block;}*/
 .woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register{/*height:320px;*/}
 .woocommerce form.register .woocommerce-privacy-policy-text p{padding: 30px 0px;}
-#customer_login{}
+#customer_login{ margin: 0; }
 #customer_login h2{text-transform: uppercase; font-weight: bold;}
 .yith-wcwl-add-to-wishlist .show a{font-weight: bold; color: #cb9e44;}
 .related{float: left; padding: 30px 0px; text-align: center;}
@@ -182,7 +182,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .product-detail .price .woocommerce-Price-currencySymbol{font-weight: bold; color: #cb9e44; font-size: 24px; }
 .product-detail  .posted_in{display:none;}
 .woocommerce div.product form.cart div.quantity{width: 100%;}
-.entry-summary .cart{}
+.entry-summary .cart{ margin: 0; }
 .entry-summary .cart h2{font-size: 18px; font-weight: bold; color: #252525; text-transform: uppercase; padding-bottom: 20px;}
 .entry-summary .cart .quantity{float:none !important; margin-bottom: 30px !important;}
 .entry-summary .cart .quantity input{border: 1px solid #cb9e44; color: #000; height: 30px;}
@@ -206,7 +206,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .woocommerce div.product .woocommerce-tabs ul.tabs li::before{display:none; left: -6px; border-bottom-right-radius: 0 !important; border-width: 0 !important; -webkit-box-shadow: none; box-shadow: none;}
 .woocommerce-Tabs-panel .yikes-custom-woo-tab-title{display:none; font-size:18px; color:#cb9e44; padding-bottom: 20px;}
 .woocommerce-Tabs-panel p{font-size: 15px; line-height: 20px; padding-bottom: 20px;}
-.woocommerce-Reviews .comments{}
+.woocommerce-Reviews .comments{ margin: 0; }
 .woocommerce #reviews #comments h2{font-size:18px !important; color:#7aac3d !important; padding-bottom: 20px;}
 .woocommerce #review_form #respond .form-submit input{left: auto; background-color: #7aac3d; color: #fff; text-transform: uppercase;}
 .select2-container--default .select2-results>.select2-results__options{display:grid !important;}
@@ -280,7 +280,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .woocommerce-page .single-title{position:relative; padding: 0;}
 .woocommerce-page .single-title h3{position: absolute; left: 585px; top: 0;}
 .woocommerce-page .single-title h3 a{font-size: 32px;}
-.woocommerce-page .product{}
+.woocommerce-page .product{ margin: 0; }
 .woocommerce-page .product .price{margin: 20px 0px;}
 .woocommerce-page .product .price span{font-size: 30px; color: #cb9e44; font-weight: 600;}
 
@@ -289,13 +289,13 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .entry-summary .yith-wcwl-add-button a{border: 1px solid #2d2e2e; border-radius: 0; font-weight: bold; text-transform: uppercase; padding: 12px 27px !important; color: #2d2e2e !important;}
 .entry-summary .yith-wcwl-add-button a:hover{border: 1px solid #cd2027; color: #fff !important; background-color: #cd2027 !important;}
 .woocommerce .posted_in{display:none;}
-.woocommerce-tabs{}
+.woocommerce-tabs{ margin: 0; }
 .woocommerce div.product .woocommerce-tabs ul.tabs{width: 100%; margin-top: 50px;}
 .woocommerce div.product .woocommerce-tabs ul.tabs::before{border:0;}
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active::after, .woocommerce div.product .woocommerce-tabs ul.tabs li::after, .woocommerce div.product .woocommerce-tabs ul.tabs li.active::after{box-shadow: none;}
 .woocommerce div.product .woocommerce-tabs ul.tabs li{display: inline-block !important; border: 0; width: auto; border: 1px solid #cb9e44; margin: 0;}
 .woocommerce div.product .woocommerce-tabs .panel{width: 100%; padding: 50px 30px;}
-.woocommerce div.product .woocommerce-tabs .panel ul{}
+.woocommerce div.product .woocommerce-tabs .panel ul{ margin: 0; padding: 0; }
 .woocommerce div.product .woocommerce-tabs .panel ul li{display: block; padding: 5px 0px;}
 .woocommerce div.product .woocommerce-tabs .panel ul li:before{content: "\f105"; font-family: "fontawesome"; padding-right: 10px; color: #cd2027;}
 .woocommerce-cart table.cart td.actions .coupon .input-text{width:50%; margin: 0;}
@@ -314,18 +314,18 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 /*Cart Page Start*/
 .woocommerce table.cart td.actions .coupon .button{padding: 10px 30px !important;}
-.woocommerce .cart-collaterals, .woocommerce-page .cart-collaterals{}
+.woocommerce .cart-collaterals, .woocommerce-page .cart-collaterals{ margin: 0; }
 .woocommerce-page .cart-collaterals .cart_totals{margin-top: 15px;}
 .woocommerce-page .cart-collaterals .cart_totals h2{font-size: 32px; text-transform: capitalize; font-weight: 500; padding-bottom: 20px;}
 
 /*Cart Page End*/
 
 /*Check out Page Start*/
-.checkout{}
+.checkout{ margin: 0; }
 .checkout .woocommerce-billing-fields{padding-bottom: 40px;}
 .checkout .woocommerce-billing-fields h3 ,.woocommerce-additional-fields h3{padding-bottom: 30px; text-transform: capitalize; color: #000;}
-.checkout .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper{}
-.checkout .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper label{}
+.checkout .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper{ margin: 0; }
+.checkout .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper label{ display: block; }
 .checkout .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper input{border: 1px solid #cb9e44 !important; padding: 10px !important;}
 .checkout .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .select2-selection{border-radius: 0; border: 1px solid #cb9e44;}
 .woocommerce-additional-fields textarea{border: 1px solid #cb9e44 !important; padding: 10px !important;}
@@ -333,9 +333,9 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 /*Check out Page End*/
 /*Lost Password Start*/
-.lost_reset_password{}
+.lost_reset_password{ margin: 0; }
 .lost_reset_password p{font-size: 16px; font-weight: 500; padding-bottom: 30px;}
-.lost_reset_password .woocommerce-form-row{}
+.lost_reset_password .woocommerce-form-row{ margin: 0; }
 .lost_reset_password .woocommerce-form-row label{text-transform: capitalize;}
 .woocommerce-info, .woocommerce-message{border-top-color: #cb9e44 !important;}
 .woocommerce-info::before, .woocommerce-message::before{color: #cb9e44 !important;}
@@ -516,7 +516,7 @@ header #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-m
 header #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row .mega-menu-column > ul.mega-sub-menu > li.mega-menu-item.bottomText > a.mega-menu-link{text-transform:initial !important;pointer-events:none;}
 header .hSearch .bi-search::before { content: "\f52a"; font-weight: 500 !important; }
 .getStartedButton { background: #111827; position: fixed; right: 0; height: 100px; width: 200px; display: flex; justify-content: center; align-items: center; padding: 0px 10px; z-index: 99999; border-bottom-left-radius: 5px; border-top-left-radius: 5px; display: none; /* Hidden for now */ }
-.getStartedButton img{}
+.getStartedButton img{ max-width: 100%; }
 header .secondRow .col-md-1 p{width:fit-content;}
 header .secondRow .col-md-1{padding-left:0px;}
 header .secondRow .col-md-1 a{ font-size: 15px; color: #fff; padding: 0 !important; line-height: 26px !important; height: 25px !important; text-transform: capitalize; font-weight: 500; background: transparent !important;overflow:hidden; }
@@ -682,7 +682,7 @@ header .fullscreenmenu .blog .read-more{color: #635AFF !important; font-size: 14
 .homeBlogGrid .imageBox img{height: 180px; width: 100%; object-fit: cover; border-radius: 8px; transition: transform 0.3s ease;}
 .homeBlogGrid .contentBox{padding: 16px 0 0 0; display: flex; flex-direction: column;}
 .homeBlogGrid .contentBox h2{margin: 10px 0px 15px !important; height: 65px; overflow: hidden; order: 1;}
-.homeBlogGrid .contentBox h2 a{color: #0F1C2C; font-size: 24px; font-style: normal; font-weight: 400; line-height: 1.3; text-overflow: ellipsis; overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; font-family: Georgia, serif !important; text-decoration: none !important;}
+.homeBlogGrid .contentBox h2 a{color: #0F1C2C; font-size: 24px; font-style: normal; font-weight: 400; line-height: 1.3; text-overflow: ellipsis; overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; font-family: 'Inter', sans-serif !important; text-decoration: none !important;}
 
 .homeBlogGrid .contentBox h2 a:hover{color: #635BFF; text-decoration: none;}
 
@@ -712,14 +712,16 @@ header .fullscreenmenu .blog .read-more{color: #635AFF !important; font-size: 14
 }
 
 .paginationBox{text-align:center;}
-.pagination a{ background: transparent; padding: 12px 20px; font-size: 18px; color: #000000;transition: all 0.5s; font-weight: 600; }
-.pagination a:hover{ background: #635BFF;color:#fff; }
-.pagination span.current{ background: #635BFF; padding: 12px 20px; font-size: 18px; color: #fff; font-weight: 600;}
-.pagination{border-radius:30px;}
+.pagination a{ background: transparent; padding: 8px 12px; font-size: 14px; color: #000000; transition: all 0.3s; font-weight: 400; position: relative; }
+.pagination a:hover{ background: transparent; color: #635BFF; }
+.pagination a:hover::after{ content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: #635BFF; }
+.pagination span.current{ background: transparent; padding: 8px 12px; font-size: 14px; color: #635BFF; font-weight: 400; position: relative; }
+.pagination span.current::after{ content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: #635BFF; }
+.pagination{border-radius:0;}
 
 .homeBlogGrid .vc_col-sm-9{width:70% !important;}
 .homeBlogGrid .vc_col-sm-3{width:30% !important;}
-.blogSidebar {}
+.blogSidebar { margin: 0; }
 .blogSidebar .subscribeBox{
   background-color: #0F1C2C;
   background-image: url('images/geometric-background.png');
@@ -734,7 +736,7 @@ header .fullscreenmenu .blog .read-more{color: #635AFF !important; font-size: 14
   overflow: hidden;
 }
 .blogSidebar .subscribeBox:hover{box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);}
-.blogSidebar .subscribeBox h3{color: #fff; font-size: 32px; font-weight: 400; font-family: Georgia, serif; margin-bottom: 15px;}
+.blogSidebar .subscribeBox h3{color: #fff; font-size: 32px; font-weight: 400; font-family: 'RecklessNeue', serif; margin-bottom: 15px;}
 .blogSidebar .subscribeBox p.desc{color: #fff; font-size: 16px; padding: 0 0 20px; line-height: 1.5; opacity: 0.9;}
 .blogSidebar .subscribeBox input{width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.3); padding: 12px; margin-bottom: 15px; background: rgba(255, 255, 255, 0.1); color: #fff;}
 .blogSidebar .subscribeBox input::placeholder{color: rgba(255, 255, 255, 0.6);}
@@ -743,43 +745,44 @@ header .fullscreenmenu .blog .read-more{color: #635AFF !important; font-size: 14
 
 .featuredPosts{
   margin: 45px 0px 25px;
-  background-color: #F4F4F4;
-  background-image: url('images/geometric-background-grey.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+  background-color: #CAD5F3; /* Using the brand's main grey color */
+  z-index: 1;
   padding: 35px 28px 25px;
   transition: all 0.4s;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
   border: none;
 }
 .featuredPosts:hover{box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);}
-.featuredPosts .widget-title, .featuredPosts h2.widgettitle{color: #0F1C2C; font-size: 32px; font-weight: 400; font-family: Georgia, serif; margin-bottom: 20px; position: relative; display: inline-block;}
+
+/* Removed geometric background in favor of solid color */
+.featuredPosts .widget-title, .featuredPosts h2.widgettitle{color: #0F1C2C; font-size: 28px; font-weight: 400; font-family: 'RecklessNeue', serif; margin-bottom: 25px; position: relative; display: inline-block;}
 .featuredPosts .widget-title:after, .featuredPosts h2.widgettitle:after{content: ''; position: absolute; bottom: -8px; left: 0; width: 40px; height: 3px; background-color: #635BFF; border-radius: 2px;}
 .featuredPosts .media:nth-child(1){margin-top:20px !important;}
-.featuredPosts .media{display: flex; align-items: center; margin: 0px 0px 15px !important; padding: 0px 0px 15px !important; border-bottom: 1px solid rgba(15, 28, 44, 0.1);}	
-.featuredPosts .media img{height: 70px; width: 70px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);}	
-.featuredPosts .media .entry-title{line-height: 1.3; margin-bottom: 8px; padding: 0;}
-.featuredPosts .media .entry-title a{color: #0F1C2C; font-size: 16px; font-weight: 600; font-family: Georgia, serif !important; text-decoration: none; transition: color 0.3s ease;}
+.featuredPosts .media{margin: 0px 0px 15px !important; padding: 0px 0px 15px !important; border-bottom: 1px solid rgba(15, 28, 44, 0.1);}
+.featuredPosts .media:last-child{border-bottom: none; margin-bottom: 0 !important; padding-bottom: 0 !important;}	
+.featuredPosts .media img{display: none;}	
+.featuredPosts .media .entry-title{line-height: 1.3; margin-bottom: 8px; padding: 0; position: relative;}
+.featuredPosts .media .entry-title a{color: #0F1C2C; font-size: 16px; font-weight: 500; font-family: Inter, sans-serif !important; text-decoration: none; transition: color 0.3s ease; display: block; padding-left: 15px;}
+.featuredPosts .media .entry-title a:before{content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 6px; height: 6px; border-radius: 50%; background-color: #635BFF; transition: transform 0.3s ease;}
 .featuredPosts .media .entry-title a:hover{color: #635BFF;}
+.featuredPosts .media .entry-title a:hover:before{transform: translateY(-50%) scale(1.3);}
 .featuredPosts .media .entry-meta span.st-lp-time{display: none;}
 .featuredPosts .sp-latest-posts-widget.latest-posts .small span{color:#5b616e; font-size: 13px; font-weight: 600;}
 .featuredPosts .sp-latest-posts-widget.latest-posts .media>.pull-left {width: 1500% !important; }
-.featuredPosts .sp-latest-posts-widget.latest-posts .small span::before{content:"⬤";color:#635BFF;font-size: 10px; position: relative; bottom: 1px;padding-right: 5px;}
-.featuredPosts .media:hover img{transform: scale(1.05);}
+.featuredPosts .sp-latest-posts-widget.latest-posts .small span::before{display: none;}
 
-.experienceSection { padding-top: 80px !important; padding-bottom: 80px; margin: 0px 200px 90px 200px !important;border-radius: 10px;}
-.experienceSection .vc_col-sm-12{    padding: 0px 50px;}
+
+.experienceSection { padding: 60px 50px !important; margin: 0px 0px 90px 0px !important; border-radius: 8px; background-color: #635BFF; background-image: url('images/purple-cta-background.png'); background-size: cover; background-position: center; box-shadow: none; overflow: hidden; position: relative; text-align: center; width: 100%;}
+.experienceSection .vc_col-sm-12{    padding: 0;}
 .experienceSection .vc_col-sm-3 img{width: 90px;}
-.experienceSection h2{color: #FFF; font-size: 45px; font-weight: 400; line-height: 101%;}
- .experienceSection h3 { color: #FFF; font-family: Inter; font-size: 18px; font-weight: 500; line-height: 101%; margin: 25px 0px 40px !important; }
-.experienceSection p{color: #FFF; font-size: 15px; font-weight: 400; line-height: 25px;padding:20px 0px;}
-.experienceSection a.designBtn{}
-.experienceSection a.designBtn:hover{ border-color:#fff; color:#635BFF; }
-.experienceSection a.designBtn::before,.experienceSection .designBtn::after {background: #fff; } 
+.experienceSection h2{color: #FFF; font-size: 42px; font-weight: 400; font-family: 'RecklessNeue', serif; line-height: 1.1; margin-bottom: 20px; max-width: 70%; margin-left: auto; margin-right: auto;}
+.experienceSection h3 { color: #FFF; font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 400; line-height: 1.5; margin: 0 auto 35px !important; max-width: 60%; opacity: 0.9; }
+.experienceSection p{color: #FFF; font-size: 16px; font-weight: 400; font-family: 'Inter', sans-serif; line-height: 1.6; padding: 0 0 25px; opacity: 0.9; max-width: 75%; margin-left: auto; margin-right: auto;}
+.experienceSection a.designBtn{color: #635BFF; background-color: #fff; border: 1px solid #fff; border-radius: 30px; padding: 10px 24px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; display: inline-block; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); text-transform: uppercase; letter-spacing: 0.5px;}
+.experienceSection a.designBtn:hover{ background-color: transparent; color: #fff; border-color: #fff; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); }
+.experienceSection a.designBtn::before,.experienceSection .designBtn::after {display: none; }
 /* home page css ends */
 
 
@@ -792,29 +795,32 @@ body.page-id-123 .blogSidebar .featuredPosts{display:none;}
 /* Estate tax detail css starts */
 .detailSection { padding-bottom: 80px; }
 .detailSection h2 { margin: 20px 0px; font-size: 35px; color: #000; font-weight: 400; }
-.detailSection strong{}
+.detailSection strong{ font-weight: bold; }
 .detailSection p { font-size: 18px; color: #000; line-height: 26px; padding-bottom: 15px; }
 .detailSection .btn p{font-weight: 500;}
 .detailSection .designBtn {margin: 20px 0px;}
  .detailSection p strong a { font-size: 18px; color: #635BFF; line-height: 26px; padding-bottom: 15px; text-decoration: underline; }
 /*  Estate tax  detail css ends */
 
-footer{padding:60px 0px 40px;}
-footer h3{color: #333; font-size: 28px; font-weight: 600; line-height: 101%;margin-bottom:20px;}
-footer img{}
-footer ul{}
-footer li{display:block;margin-bottom:10px;}
-footer li a{color: #808080; font-family: Inter; font-size: 18px; font-style: normal; font-weight: 400; line-height: 25px;transition:all 0.4s;}
+footer{padding:60px 0px 40px; background-color: #fff; border-top: 1px solid rgba(91, 97, 110, 0.1);}
+footer h3{color: #0F1C2C; font-size: 16px; font-weight: 600; font-family: 'Inter', sans-serif; line-height: 1.2; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px;}
+footer img{ max-width: 100%; width: auto; max-height: 32px; }
+footer ul{ list-style: none; padding: 0; }
+footer li{display:block;margin-bottom:12px;}
+footer li a{color: #5b616e; font-family: 'Inter', sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 1.5; transition: all 0.3s ease;}
 footer li a:hover{color: #635BFF;}
 footer .designBtn{background: #0F1C2C;border: 1px solid #0F1C2C;width: 130px; text-align: center; }
 footer .designBtn:hover{ border-color:#635BFF;  }
 footer .designBtn::before,footer .designBtn::after {background: #635BFF; } 
 footer .designBtn i{font-size: 12px; margin-left: 6px;}
-footer .bottomRow{margin-top:40px !important;}
-footer .bottomRow p{color: #808080; text-align: center; font-family: Inter; font-size: 15px; font-style: normal; font-weight: 400; line-height: normal;}
-footer .bottomRow p a{color: #635BFF; font-family: Inter; font-size: 15px; font-style: normal; font-weight: 600; line-height: normal;transition:all 0.4s}
+footer .bottomRow{margin-top:40px !important; display: flex; align-items: flex-start; justify-content: space-between;}
+footer .bottomRow p{color: #5b616e; text-align: left; font-family: 'Inter', sans-serif; font-size: 12px; font-style: normal; font-weight: 400; line-height: 1.5;}
+footer .bottomRow p a{color: #635BFF; font-family: 'Inter', sans-serif; font-size: 12px; font-style: normal; font-weight: 500; line-height: 1.5; transition: all 0.3s ease;}
 footer .bottomRow p a:hover{text-decoration:underline;}
 footer .fSolution{padding-left: 30px;}
+footer .social-icons{display: flex; justify-content: flex-end; gap: 16px; margin-top: 5px;}
+footer .social-icons a{display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background-color: #f5f5f7; color: #5b616e; transition: all 0.3s ease; font-size: 14px;}
+footer .social-icons a:hover{background-color: #635BFF; color: #fff;}
 
 
 .blogContent .blogContentRow{display:flex;align-items:center;margin-bottom: 30px;}
@@ -849,7 +855,7 @@ footer .fSolution{padding-left: 30px;}
  .blogContent .contactSection input { padding: 13px; background-color: #fff; border: 1px solid #d7d7d7;position:relative;border-radius: 5px;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
 .blogContent .contactSection input::placeholder{font-size:16px;color:#80849a;}
 .blogContent .contactSection input[type=submit] { position: absolute; top: 0px; right: 86px; padding: 7px; width: 130px; background-color: #635BFF; color: #fff; }
-.blogContent .contactSection input[type=submit]::placeholder{}
+.blogContent .contactSection input[type=submit]::placeholder{ color: transparent; }
 
 
 .blogContent h2{font-size:32px;color:#000;font-weight:400;padding:15px 0px 15px;font-family: 'Inter';}
@@ -898,7 +904,7 @@ footer .fSolution{padding-left: 30px;}
 header .designBtn { border-radius: 5px; border: 1px solid #635BFF; position: relative; overflow: hidden; transition: all 0.5s ease-in; z-index: 1; color: #FFF; font-size: 14px; font-weight: 500; padding: 8px 8px; width: AUTO; display: inline-block; background: #635BFF; }	
 header	 a.designBtn { font-size: 14px !important; }
 secondRow .getStartedButton { background: #111827; position: fixed; right: 0; height: 70px; width: 180px; display: none; /* Hidden for now */ }
-footer img { width: 100%; }
+footer .fLogo img { width: auto; max-height: 32px; }
 footer	 .fLogo { padding-bottom: 30px; }
 footer ul { padding-bottom: 0px; display: block; }
 footer .row{display:flex;}
@@ -908,7 +914,7 @@ footer .row{display:flex;}
 .blogSliderSection .contentBox { padding-left: 15px; }
 .getStartedButton { background: #111827; position: fixed; right: 0; height: 80px; width: 170px; display: none; /* Hidden for now */ }
 .blogSidebar .subscribeBox { border: 1px solid #000; padding: 25px 16px 20px; transition: all 0.4s; }
-.featuredPosts { margin: 45px 0px 25px; color: #000000; font-size: 25px; font-weight: 600; border: 1px solid #000; padding: 25px 10px 10px; font-family: 'racklessNeue-semibold' !important; }
+.featuredPosts { margin: 45px 0px 25px; color: #000000; font-size: 25px; font-weight: 600; border: 1px solid #000; padding: 25px 10px 10px; font-family: 'RecklessNeue' !important; }
 .homeBlogGrid .col-md-4 { padding: 0px 5px !important; width: 100%; }
 .homeBlogGrid .vc_col-sm-3 { width: 35% !important; }
 .homeBlogGrid .vc_col-sm-9 { width: 60% !important; }
@@ -979,7 +985,7 @@ footer .fSolution { padding-left: 0px; }
 	 .homeBlogGrid { padding-bottom: 0px; }
 	 .homeBlogGrid .vc_col-sm-3 { width: 100% !important; }
 	 .blogSidebar { display: flex ; padding: 40px 0px; }
-	 .blogSidebar .featuredPosts { margin: 0px 0px 25px !important; color: #000000; font-size: 25px; font-weight: 600; border: 1px solid #000; padding: 25px 10px 10px; font-family: 'racklessNeue-semibold' !important; width: 50%; }
+	 .blogSidebar .featuredPosts { margin: 0px 0px 25px !important; color: #000000; font-size: 25px; font-weight: 600; border: 1px solid #000; padding: 25px 10px 10px; font-family: 'RecklessNeue' !important; width: 50%; }
 	 .blogSidebar .subscribeBox { border: 1px solid #000; padding: 25px 16px 20px; transition: all 0.4s; margin-right: 30px;height:fit-content; }
 	 .experienceSection { margin: 0px 20px 9px 20px !important; }
 	 .experienceSection .vc_col-sm-3 img { width: 90px; padding: 10px 0px; }

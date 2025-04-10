@@ -30,10 +30,17 @@
     </div><!--col-->
 </div><!--row-->
 	<div class="row bottomRow">
-		<div class="col-md-12">
-			<p class="text-center">
+		<div class="col-md-9">
+			<p>
 				Copyright © 2024 Valur, Inc. All rights reserved. Valur provides online information and access to an outside referral network of professional service providers. Valur is not a law firm or an accounting firm, we do not provide legal or tax advice, and we are not a substitute for an attorney or an accountant. All information and referral services are provided by Valur, Inc., a Delaware corporation. Use of this website and Valur's services is subject to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a>
 			</p>
+		</div>
+		<div class="col-md-3">
+			<div class="social-icons">
+				<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+				<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+				<a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+			</div>
 		</div>
 	</div>
 </div><!--container-->
