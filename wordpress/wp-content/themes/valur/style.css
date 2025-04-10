@@ -70,8 +70,8 @@ li:last-child{margin-bottom: 0;}
 /* END - For Bootstrap */
 body{ font-style:normal; font-variant:normal; font-weight:normal; font-size:14px; line-height:normal; font-family: "Inter", sans-serif; color: #333;
 background-color: #FFF; /* background: #FFF url("../images/bg.jpg") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;	background-size: cover;*/}
-h1{	font-size:32px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
-h2{	font-size:30px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
+h1{	font-size:32px; font-weight:400;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
+h2{	font-size:30px; font-weight:400;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
 h3{	font-size:24px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
 h4{	font-size:18px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
 h5{	font-size:16px; font-weight:normal;	line-height:normal; font-style:normal; font-variant:normal;	font-family: 'racklessNeue-semibold'; color: #333; }
@@ -369,7 +369,7 @@ header .row.firstRow .col-md-3.btnCol{text-align: right; padding-right: 0 !impor
 
 /* Second row wrapper with full-width background */
 .secondRowWrapper {
-    background: #F4F4F4;
+    background: #0F1C2C;
     width: 100%;
     position: relative;
     padding: 8px 0;
@@ -464,8 +464,8 @@ header .secondRow .navigation #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_meg
 
 /* Estate Tax - Blue */
 header .navigation #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item:nth-child(1) > a.mega-menu-link {
-  background-color: rgba(0, 212, 255, 0.3) !important;
-  color: #005e73 !important;
+  background-color: #00D4FF !important;
+  color: #000000 !important;
 }
 header .navigation #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item:nth-child(1) > a.mega-menu-link::before {
   content: "\f19c"; /* Building icon */
@@ -473,8 +473,8 @@ header .navigation #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > 
 
 /* Capital Gains - Purple */
 header .navigation #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item:nth-child(2) > a.mega-menu-link {
-  background-color: rgba(99, 91, 255, 0.3) !important;
-  color: #2b2773 !important;
+  background-color: #635BFF !important;
+  color: #000000 !important;
 }
 header .navigation #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item:nth-child(2) > a.mega-menu-link::before {
   content: "\f0d6"; /* Money icon */
@@ -482,8 +482,8 @@ header .navigation #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > 
 
 /* Ordinary Income - Green */
 header .navigation #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item:nth-child(3) > a.mega-menu-link {
-  background-color: rgba(91, 250, 205, 0.3) !important;
-  color: #0a7d64 !important;
+  background-color: #5BFACD !important;
+  color: #000000 !important;
 }
 header .navigation #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item:nth-child(3) > a.mega-menu-link::before {
   content: "\f155"; /* Dollar icon */
@@ -491,8 +491,8 @@ header .navigation #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > 
 
 /* QSBS - Pink */
 header .navigation #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item:nth-child(4) > a.mega-menu-link {
-  background-color: rgba(255, 96, 189, 0.3) !important;
-  color: #8e2a64 !important;
+  background-color: #FF60BD !important;
+  color: #000000 !important;
 }
 header .navigation #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item:nth-child(4) > a.mega-menu-link::before {
   content: "\f1ad"; /* Building icon */
@@ -519,7 +519,7 @@ header .hSearch .bi-search::before { content: "\f52a"; font-weight: 500 !importa
 .getStartedButton img{}
 header .secondRow .col-md-1 p{width:fit-content;}
 header .secondRow .col-md-1{padding-left:0px;}
-header .secondRow .col-md-1 a{ font-size: 15px; color: #000; padding: 0 !important; line-height: 26px !important; height: 25px !important; text-transform: capitalize; font-weight: 500; background: transparent !important;overflow:hidden; }
+header .secondRow .col-md-1 a{ font-size: 15px; color: #fff; padding: 0 !important; line-height: 26px !important; height: 25px !important; text-transform: capitalize; font-weight: 500; background: transparent !important;overflow:hidden; }
 header .secondRow .col-md-1 a::after { content: ""; position: absolute; width: 0; height: 2px; background-color: #635BFF; display: block; transition: 0.5s; }
 header .secondRow .col-md-1 p:hover a::after { width:55%; }
 
@@ -565,38 +565,151 @@ header .fullscreenmenu .blog .read-more{color: #635AFF !important; font-size: 14
 .blogSliderSection .blogSwiper-container{overflow:hidden;}
 .blogSliderSection .blogSwiper-container .swiper-slide .row{display:flex;align-items:center;}
 .blogSliderSection .blogSwiper-container .swiper-wrapper{padding-bottom:60px !important;}
-.blogSliderSection .blogSwiper-container .swiper-slide img{border: 12px solid #000; border-radius: 20px; height: 300px; width: 100%; object-fit: cover;}
+.blogSliderSection .blogSwiper-container .swiper-slide img{
+    border: none; 
+    border-radius: 4px; 
+    height: 300px; 
+    width: 100%; 
+    object-fit: cover;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.blogSliderSection .blogSwiper-container .swiper-slide:hover img {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
 .blogSliderSection .contentBox{padding-left: 47px;}
-.blogSliderSection .contentBox h1{color: #000; font-size: 42px; font-style: normal; font-weight: 600; line-height: normal; margin: 10px 0px 20px;}
+.blogSliderSection .contentBox h1{
+    color: #0F1C2C; 
+    font-size: 42px; 
+    font-style: normal; 
+    font-weight: 400; 
+    line-height: normal; 
+    margin: 10px 0px 20px;
+}
 .blogSliderSection .contentBox h3{line-height: 0;}
-.blogSliderSection .contentBox h3 a{color: #635BFF; font-size: 16px; font-weight: 600;pointer-events:none;}
-.blogSliderSection .contentBox p{color: #000; font-size: 16px;line-height: 24px;}
-.blogSliderSection .contentBox .mergeBox{display: flex; margin: 15px 0px;}
-.blogSliderSection .contentBox .mergeBox .authorBox{border-right: 2px solid #000; padding-right: 5px;}
-.blogSliderSection .contentBox .mergeBox .authorBox a{color: #000; font-family: Inter; font-size: 14px; font-style: normal; font-weight: 600; line-height: normal;pointer-events:none;}
-.blogSliderSection .contentBox .mergeBox .dateBox{padding-left: 5px;}
-.blogSliderSection .contentBox .mergeBox .dateBox span{color: #000; font-family: Inter; font-size: 14px; font-style: normal; font-weight: 600; line-height: normal;}
-.blogSliderSection .contentBox a.readMore{color: #000; font-size: 14px; font-weight: 600; margin-top: 10px; display: inline-block;}
-..blogSliderSection .swiper-horizontal>.swiper-pagination-bullets,.mobileTeamSection .swiper-pagination-bullets.swiper-pagination-horizontal, .mobileTeamSection .swiper-pagination-custom, .mobileTeamSection .swiper-pagination-fraction { bottom: 0px !important;}
-.blogSliderSection .swiper-pagination-bullet { width: 9px !important; height: 9px !important;  }
-.blogSliderSection .swiper-pagination-bullet-active { opacity: var(--swiper-pagination-bullet-opacity, 1) !important; background: #635AFF !important; }
+.blogSliderSection .contentBox h3 a{
+    color: #635BFF; 
+    font-size: 16px; 
+    font-weight: 600;
+    pointer-events: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.blogSliderSection .contentBox p{
+    color: #333; 
+    font-size: 16px;
+    line-height: 24px;
+}
+.blogSliderSection .contentBox .mergeBox{
+    display: flex; 
+    margin: 15px 0px;
+}
+.blogSliderSection .contentBox .mergeBox .authorBox{
+    border-right: 2px solid #CAD5F3; 
+    padding-right: 10px;
+}
+.blogSliderSection .contentBox .mergeBox .authorBox a{
+    color: #5b616e; 
+    font-family: Inter; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-weight: 600; 
+    line-height: normal;
+    pointer-events:none;
+}
+.blogSliderSection .contentBox .mergeBox .dateBox{
+    padding-left: 10px;
+}
+.blogSliderSection .contentBox .mergeBox .dateBox span{
+    color: #5b616e; 
+    font-family: Inter; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-weight: 600; 
+    line-height: normal;
+}
+.blogSliderSection .contentBox a.readMore{
+    color: #635BFF; 
+    font-size: 14px; 
+    font-weight: 600; 
+    margin-top: 15px; 
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+}
+.blogSliderSection .contentBox a.readMore:hover {
+    text-decoration: underline;
+}
+
+.blogSliderSection .contentBox a.readMore:after {
+    content: '→';
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+
+.blogSliderSection .contentBox a.readMore:hover:after {
+    margin-left: 8px;
+}
+.blogSliderSection .swiper-horizontal>.swiper-pagination-bullets,
+.mobileTeamSection .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.mobileTeamSection .swiper-pagination-custom, 
+.mobileTeamSection .swiper-pagination-fraction { 
+    bottom: 0px !important;
+}
+.blogSliderSection .swiper-pagination-bullet { 
+    width: 10px !important; 
+    height: 10px !important;
+    transition: all 0.3s ease;
+}
+.blogSliderSection .swiper-pagination-bullet-active { 
+    opacity: var(--swiper-pagination-bullet-opacity, 1) !important; 
+    background: #635BFF !important; 
+    transform: scale(1.2);
+}
 
 .homeBlogGrid{padding-bottom: 80px;}
 .homeBlogGrid .vc_col-sm-12 .vc_column-inner{padding-left:0px;}
-.homeBlogGrid h2{color: #000; font-size: 36px; font-weight: 600; margin-bottom: 30px !important; margin-left:0px;}
-.homeBlogGrid .col-md-4 .mainbox{margin-bottom: 30px !important; transition: all 0.4s; border: 1px solid transparent; padding: 15px 15px 25px; border-radius: 5px;}
+.homeBlogGrid h2{color: #000; font-size: 36px; font-weight: 400; margin-bottom: 30px !important; margin-left:0px;}
+.homeBlogGrid .col-md-4 .mainbox{margin-bottom: 30px !important; transition: all 0.3s ease; border: 1px solid transparent; padding: 20px; border-radius: 8px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05); background-color: #fff;}
 .homeBlogGrid .col-md-4{padding:0px 5px !important;}
- .homeBlogGrid .col-md-4 .mainbox{ border: 1px solid #DADADA; }
+.homeBlogGrid .col-md-4:nth-child(3n+1){padding-left:0px !important;}
+.homeBlogGrid .col-md-4 .mainbox{ border: 1px solid #f0f0f5; }
 .homeBlogGrid .col-md-4:hover .mainbox{border: 1px solid #635BFF;}
-.homeBlogGrid .imageBox img{height: 150px; width: 100%; object-fit: cover;}
-.homeBlogGrid .contentBox{}
-.homeBlogGrid .contentBox h2{color: #000; font-size: 18px; font-style: normal; font-weight: 600; line-height: normal; margin: 10px 0px 0px !important; height: 70px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 3; -webkit-box-orient: vertical; white-space: normal;}
-.homeBlogGrid .contentBox .mergeBox{display: flex; margin: 15px 0px;}
-.homeBlogGrid .contentBox .mergeBox .authorBox{border-right: 2px solid #000; padding-right: 5px;}
-.homeBlogGrid .contentBox .mergeBox .authorBox a{color: #000; font-family: Inter; font-size: 13px; font-style: normal; font-weight: 600; line-height: normal;pointer-events:none;}
-.homeBlogGrid .contentBox .mergeBox .dateBox{padding-left: 5px;}
-.homeBlogGrid .contentBox .mergeBox .dateBox span{color: #000; font-family: Inter; font-size: 13px; font-style: normal; font-weight: 600; line-height: normal;}
-.homeBlogGrid .contentBox a.readMore{color: #000; font-size: 14px; font-weight: 600; margin-top: 10px; display: inline-block;}
+.homeBlogGrid .imageBox img{height: 180px; width: 100%; object-fit: cover; border-radius: 8px; transition: transform 0.3s ease;}
+.homeBlogGrid .contentBox{padding: 16px 0 0 0; display: flex; flex-direction: column;}
+.homeBlogGrid .contentBox h2{margin: 10px 0px 15px !important; height: 65px; overflow: hidden; order: 1;}
+.homeBlogGrid .contentBox h2 a{color: #0F1C2C; font-size: 24px; font-style: normal; font-weight: 400; line-height: 1.3; text-overflow: ellipsis; overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; font-family: Georgia, serif !important; text-decoration: none !important;}
+
+.homeBlogGrid .contentBox h2 a:hover{color: #635BFF; text-decoration: none;}
+
+.homeBlogGrid .contentBox .mergeBox{display: flex; flex-direction: column; margin: 0px 0px 15px; order: 2;}
+.homeBlogGrid .contentBox .mergeBox .authorBox{border-right: none; padding-right: 0; margin-bottom: 5px;}
+.homeBlogGrid .contentBox .mergeBox .authorBox a{color: #5b616e; font-family: Inter; font-size: 13px; font-style: normal; font-weight: 600; line-height: normal; pointer-events: none;}
+.homeBlogGrid .contentBox .mergeBox .dateBox{padding-left: 0;}
+.homeBlogGrid .contentBox .mergeBox .dateBox span{color: #5b616e; font-family: Inter; font-size: 13px; font-style: normal; font-weight: 600; line-height: normal;}
+.homeBlogGrid .contentBox a.readMore{color: #635BFF; font-size: 14px; font-weight: 500; margin-top: auto; display: inline-block; text-decoration: none; transition: all 0.3s ease; position: relative; order: 3;}
+
+.homeBlogGrid .contentBox a.readMore:after {
+    content: '→';
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+
+.homeBlogGrid .contentBox a.readMore:hover {
+    text-decoration: underline;
+}
+
+.homeBlogGrid .contentBox a.readMore:hover:after {
+    margin-left: 8px;
+}
+
+.homeBlogGrid .col-md-4:hover .imageBox img {
+    transform: scale(1.03);
+}
 
 .paginationBox{text-align:center;}
 .pagination a{ background: transparent; padding: 12px 20px; font-size: 18px; color: #000000;transition: all 0.5s; font-weight: 600; }
@@ -607,14 +720,26 @@ header .fullscreenmenu .blog .read-more{color: #635AFF !important; font-size: 14
 .homeBlogGrid .vc_col-sm-9{width:70% !important;}
 .homeBlogGrid .vc_col-sm-3{width:30% !important;}
 .blogSidebar {}
-.blogSidebar .subscribeBox{border: 1px solid #000; padding: 35px 28px 25px;transition: all 0.4s;}
-.blogSidebar .subscribeBox:hover{border: 1px solid #635BFF;}
-.blogSidebar .subscribeBox h3{color: #000; font-size: 32px; font-weight: 600;}
-.blogSidebar .subscribeBox p.desc{color: #000; font-size: 14px; padding: 15px 0px; line-height: 20px;}
-.blogSidebar .subscribeBox input{width: 100%; border-radius: 5px; border: 1px solid #000; padding: 12px; margin-bottom: 15px; background: transparent;}
-.blogSidebar .subscribeBox input::placeholder{}
-.blogSidebar .subscribeBox input[type=submit]{width: 120px; padding: 10px 12px; background: #635BFF; color: #fff; border-color: #635BFF;transition:all 0.4s;}
-.blogSidebar .subscribeBox input[type=submit]:hover{ background: #0F1C2C;border-color: #0F1C2C; }
+.blogSidebar .subscribeBox{
+  background-color: #0F1C2C;
+  background-image: url('images/geometric-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 35px 28px 25px;
+  transition: all 0.4s;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.blogSidebar .subscribeBox:hover{box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);}
+.blogSidebar .subscribeBox h3{color: #fff; font-size: 32px; font-weight: 400; font-family: Georgia, serif; margin-bottom: 15px;}
+.blogSidebar .subscribeBox p.desc{color: #fff; font-size: 16px; padding: 0 0 20px; line-height: 1.5; opacity: 0.9;}
+.blogSidebar .subscribeBox input{width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.3); padding: 12px; margin-bottom: 15px; background: rgba(255, 255, 255, 0.1); color: #fff;}
+.blogSidebar .subscribeBox input::placeholder{color: rgba(255, 255, 255, 0.6);}
+.blogSidebar .subscribeBox input[type=submit]{width: auto; padding: 12px 24px; background: #fff; color: #0F1C2C; border: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; cursor: pointer; display: inline-block;}
+.blogSidebar .subscribeBox input[type=submit]:hover{background: rgba(255, 255, 255, 0.9); transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
 
 .featuredPosts{margin: 45px 0px 25px; color: #000000; font-size: 25px; font-weight: 600; border: 1px solid #000; padding: 30px 20px 10px; font-family: 'racklessNeue-semibold' !important;}
 .featuredPosts .media:nth-child(1){margin-top:10px !important;}
@@ -630,7 +755,7 @@ header .fullscreenmenu .blog .read-more{color: #635AFF !important; font-size: 14
 .experienceSection { padding-top: 80px !important; padding-bottom: 80px; margin: 0px 200px 90px 200px !important;border-radius: 10px;}
 .experienceSection .vc_col-sm-12{    padding: 0px 50px;}
 .experienceSection .vc_col-sm-3 img{width: 90px;}
-.experienceSection h2{color: #FFF; font-size: 45px; font-weight: 500; line-height: 101%;}
+.experienceSection h2{color: #FFF; font-size: 45px; font-weight: 400; line-height: 101%;}
  .experienceSection h3 { color: #FFF; font-family: Inter; font-size: 18px; font-weight: 500; line-height: 101%; margin: 25px 0px 40px !important; }
 .experienceSection p{color: #FFF; font-size: 15px; font-weight: 400; line-height: 25px;padding:20px 0px;}
 .experienceSection a.designBtn{}
@@ -641,13 +766,13 @@ header .fullscreenmenu .blog .read-more{color: #635AFF !important; font-size: 14
 
 /* Estate tax css starts */
 body.page-id-123 .blogSidebar .featuredPosts{display:none;}
-.estate_tax_slider h2{color: #000; font-size: 36px; font-weight: 600; margin-bottom: 30px !important; margin-left: 15px;}
+.estate_tax_slider h2{color: #000; font-size: 36px; font-weight: 400; margin-bottom: 30px !important; margin-left: 15px;}
 /*  Estate tax css ends */
 
 
 /* Estate tax detail css starts */
 .detailSection { padding-bottom: 80px; }
-.detailSection h2 { margin: 20px 0px; font-size: 35px; color: #000; }
+.detailSection h2 { margin: 20px 0px; font-size: 35px; color: #000; font-weight: 400; }
 .detailSection strong{}
 .detailSection p { font-size: 18px; color: #000; line-height: 26px; padding-bottom: 15px; }
 .detailSection .btn p{font-weight;500;}
@@ -676,7 +801,7 @@ footer .fSolution{padding-left: 30px;}
 .blogContent .blogContentRow{display:flex;align-items:center;margin-bottom: 30px;}
  .blogContent .imageBox img { border: transparent; border-radius: 20px; height: 300px; width: 100%; object-fit: cover; }
 .blogContent .contentBox{padding-left: 47px;}
-.blogContent .contentBox h1{color: #000; font-size: 42px; font-style: normal; font-weight: 600; line-height: normal; margin: 10px 0px 20px;}
+.blogContent .contentBox h1{color: #000; font-size: 42px; font-style: normal; font-weight: 400; line-height: normal; margin: 10px 0px 20px;}
 .blogContent .contentBox h3{line-height: 0;}
 .blogContent .contentBox h3 a{color: #635BFF; font-size: 16px; font-weight: 600;pointer-events:none;}
 .blogContent .contentBox .mergeBox{display: flex; margin: 15px 0px;}
@@ -684,7 +809,7 @@ footer .fSolution{padding-left: 30px;}
 .blogContent .contentBox .mergeBox .authorBox a{color: #000; font-family: Inter; font-size: 14px; font-style: normal; font-weight: 600; line-height: normal;pointer-events:none;}
 .blogContent .contentBox .mergeBox .dateBox{padding-left: 5px;}
 .blogContent .contentBox .mergeBox .dateBox span{color: #000; font-family: Inter; font-size: 14px; font-style: normal; font-weight: 600; line-height: normal;}
-.blogContent .related-post .contentBox h2 a{ font-size:25px; color: #000; font-weight:600; padding:0px; font-family: 'Inter'; text-decoration:none !important;}
+.blogContent .related-post .contentBox h2 a{ font-size:25px; color: #000; font-weight:400; padding:0px; font-family: 'Inter'; text-decoration:none !important;}
 .blogContent .related-post .contentBox h2{padding:0px;}
 .blogContent .related-post .contentBox { padding-left:0px;}
 .blogContent .related-post .imageBox img { border: transparent; height: 220px; width: 100%; object-fit: cover; border-radius:0px;}
@@ -708,7 +833,7 @@ footer .fSolution{padding-left: 30px;}
 .blogContent .contactSection input[type=submit]::placeholder{}
 
 
-.blogContent h2{font-size:32px;color:#000;font-weight:700;padding:15px 0px 15px;font-family: 'Inter';}
+.blogContent h2{font-size:32px;color:#000;font-weight:400;padding:15px 0px 15px;font-family: 'Inter';}
 .blogContent h3{font-size:26px;color:#000;font-weight:700;padding:15px 0px 15px;display:block !important;}
 .blogContent h4{font-size:22px;color:#000;font-weight:700;padding:15px 0px 15px;}
 .blogContent p{font-size:16px;padding:0px 0px 10px;line-height:30px;color: #5b616e;}
@@ -761,7 +886,7 @@ footer .row{display:flex;}
  footer .designBtn {width: 139px;  }
 /* 	home page starts */
 .blogSliderSection { padding-top: 40px !important; padding-bottom: 40px; }
-.blogSliderSection .contentBox { padding-left: 7px; }
+.blogSliderSection .contentBox { padding-left: 15px; }
 .getStartedButton { background: #111827; position: fixed; right: 0; height: 80px; width: 170px; display: none; /* Hidden for now */ }
 .blogSidebar .subscribeBox { border: 1px solid #000; padding: 25px 16px 20px; transition: all 0.4s; }
 .featuredPosts { margin: 45px 0px 25px; color: #000000; font-size: 25px; font-weight: 600; border: 1px solid #000; padding: 25px 10px 10px; font-family: 'racklessNeue-semibold' !important; }
@@ -774,7 +899,7 @@ footer .row{display:flex;}
  .detailSection	 .btn { display: inline-block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: 400; line-height: 1.42857143; text-align: center; white-space:normal !important;}
 	
 .page-id-123	.homeBlogGrid .col-md-4 { padding: 0px 5px !important; margin: 0px 0px 40px 0px; }
-.page-id-123	.homeBlogGrid .contentBox h2 { color: #000; font-size: 18px; font-style: normal; font-weight: 600; line-height: normal; margin: 10px 0px 0px !important; height: 50px;}
+.page-id-123	.homeBlogGrid .contentBox h2 { color: #000; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal; margin: 10px 0px 0px !important; height: 50px;}
 	
 }
 @media (max-width: 767px){
@@ -811,11 +936,19 @@ footer ul { padding-bottom: 20px; display: block; }
 footer .fSolution { padding-left: 0px; }
 /* 	 home page start */
 .blogSliderSection .blogSwiper-container .swiper-slide .row { display: block; }
-.blogSliderSection .blogSwiper-container .swiper-slide .col-md-5 { display: flex ; justify-content: center; }
-.blogSliderSection .contentBox { padding-left: 7px; padding-top: 40px; }
-.blogSliderSection .contentBox .mergeBox { display: flex ; margin: 15px 0px; justify-content: center; }
-.blogSliderSection .blogSwiper-container .swiper-slide .col-md-7	 { display: flex ; justify-content: center; text-align: center; }
-.blogSliderSection .blogSwiper-container .swiper-slide img { border: 12px solid #000; border-radius: 20px; height: 250px; width: 80%; object-fit: cover; }
+.blogSliderSection .blogSwiper-container .swiper-slide .col-md-5 { display: flex; justify-content: center; }
+.blogSliderSection .contentBox { padding-left: 15px; padding-top: 40px; }
+.blogSliderSection .contentBox .mergeBox { display: flex; margin: 15px 0px; justify-content: center; }
+.blogSliderSection .blogSwiper-container .swiper-slide .col-md-7 { display: flex; justify-content: center; text-align: center; }
+.blogSliderSection .blogSwiper-container .swiper-slide img { 
+    border: none; 
+    border-radius: 12px; 
+    height: 250px; 
+    width: 80%; 
+    object-fit: cover;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 	
 	.homeBlogGrid h2 { color: #000; font-size: 30px !important; text-align: center;}
 	 .homeBlogGrid .vc_col-sm-9 { width: 100% !important; }
@@ -832,7 +965,7 @@ footer .fSolution { padding-left: 0px; }
 	 .experienceSection { margin: 0px 20px 9px 20px !important; }
 	 .experienceSection .vc_col-sm-3 img { width: 90px; padding: 10px 0px; }
 	
- .page-id-123 .homeBlogGrid .contentBox h2 { color: #000; font-size: 18px; font-style: normal; font-weight: 600; line-height: normal; margin: 10px 0px 0px !important; height: 90px; }
+ .page-id-123 .homeBlogGrid .contentBox h2 { color: #000; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal; margin: 10px 0px 0px !important; height: 90px; }
 }
 @media (max-width: 577px){
  .experienceSection .vc_col-sm-12 { padding: 0px 20px; }
@@ -844,12 +977,12 @@ footer .fSolution { padding-left: 0px; }
 	
  .detailSection { padding-bottom: 40px; }
 .detailSection h2 { margin: 10px 0px; font-size: 35px; color: #000; }
-.blogSliderSection { padding-top: 40px !important; padding-bottom: 10px; }
+.blogSliderSection { padding-top: 40px !important; padding-bottom: 20px; }
 .detailSection .designBtn { margin: 0px 0px; }
 .detailSection .designBtn   {  font-size: 13px !important;padding: 8px 12px;  }
 .detailSection p { font-size: 18px; color: #000; line-height: 26px; padding-bottom: 9px; }
 	
-.page-id-123 .homeBlogGrid .contentBox h2 { color: #000; font-size: 20px !important; font-style: normal; font-weight: 600; line-height: normal; margin: 10px 0px 0px !important; height: auto; }
+.page-id-123 .homeBlogGrid .contentBox h2 { color: #000; font-size: 20px !important; font-style: normal; font-weight: 400; line-height: normal; margin: 10px 0px 0px !important; height: auto; }
 	
 	
 	
