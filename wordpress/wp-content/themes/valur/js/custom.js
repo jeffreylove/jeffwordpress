@@ -34,26 +34,8 @@ $('ul').children('li:last-child').addClass('last');
     }
   });*/
 /*Bootstrap menu on hover*/
-/* === Sticky Menu === */
-    (function () {
-        var nav = $('header');
-        var scrolled = false;
-
-        $(window).scroll(function () {
-
-            if (110 < $(window).scrollTop() && !scrolled) {
-                nav.addClass('sticky animated fadeInDown').animate({ 'margin-top': '0px' });
-
-                scrolled = true;
-            }
-
-            if (110 > $(window).scrollTop() && scrolled) {
-                nav.removeClass('sticky animated fadeInDown').css('margin-top', '0px');
-
-                scrolled = false;
-            }
-        });
-    }());
+/* === Sticky Menu Removed === */
+    // Sticky navbar functionality removed as requested
 			
 
 			// Search

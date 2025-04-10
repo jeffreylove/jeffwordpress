@@ -9,18 +9,11 @@
         		<span class="icon-bar"></span>
 			</button>
     	</div>
-        <?php
-        wp_nav_menu( array(
-			'menu'              => 'primary',
-            'theme_location'    => 'primary',
-            'depth'             => 2,
-            'container'         => 'div',
-            'container_class'   => 'collapse navbar-collapse',
-            'container_id'      => 'bs-example-navbar-collapse-1',
-            'menu_class'        => 'nav navbar-nav',
-            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'            => new WP_Bootstrap_Navwalker())
-        );
-        ?>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="menu-item"><a href="https://valur.com">Home</a></li>
+                <li class="menu-item"><a href="https://valur.com/advisors">For Advisors</a></li>
+            </ul>
+        </div>
     </div>
 </nav>

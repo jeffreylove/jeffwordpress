@@ -22,14 +22,23 @@ register_nav_menus(array(
 
 /* Widgets */
 function create_widget($name, $id, $description){
+	$before_title = '';
+	$after_title = '';
+	
+	// Special styling for Recent Posts widget
+	if ($id === 'recent-posts') {
+		$before_title = '<h2 class="widget-title">';
+		$after_title = '</h2>';
+	}
+	
 	register_sidebar(array(
 		'name' => __($name),
 		'id' => $id,
 		'description' => __($description),
 		'before_widget' => '',
 		'after_widget' => '',
-		'before_title' => '',
-		'after_title' => ''
+		'before_title' => $before_title,
+		'after_title' => $after_title
 	));
 }
 create_widget('Page Sidebar','page','Appears in side of pages with a sidebar.');
@@ -104,7 +113,7 @@ function blog_slider($atts) {
 									 <span>Last updated: <?php the_time('d.m.y'); ?></span>
 								</div>
 							</div>
-							<a class="readMore" href="<?php the_permalink() ?>">Read More -></a>
+							<a class="readMore" href="<?php the_permalink() ?>">Read More</a>
 						</div>
 						
 					
@@ -247,7 +256,7 @@ function home_blog_grid($atts) {
 									</div>
 								</div>
 								<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-								<a class="readMore" href="<?php the_permalink(); ?>">Read More -></a>
+								<a class="readMore" href="<?php the_permalink(); ?>">Read More</a>
 							</div>
 						</div>
 					

@@ -35,11 +35,11 @@
 						</div>
 					</div>
 				</div><!--row-->
+			</div><!--container-->
+		<div class="secondRowWrapper">
+			<div class="container">
 				<div class="row secondRow">
-					<div class="col-md-1">
-						<p> <a href="#">Library</a></p>
-					</div>
-					<div class="col-md-8">
+					<div class="col-md-9">
 						<div class="navigation navigation-dropdown">
 							<?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1' ) ); ?>
 						</div>
@@ -61,7 +61,6 @@
 			<div class="fullscreenmenu estatetax">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-11">
 							<div class="col-md-4">
 								<div class="solution">
 									<h3>SOLUTIONS</h3>
@@ -83,8 +82,15 @@
 									while ( $featured_query->have_posts() ) : $featured_query->the_post(); ?>
 
 									<div class="featured-article">
-										<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-										<p><?php the_excerpt(); ?></p> <!-- Display the excerpt -->
+										<div class="article-content">
+											<div class="article-icon">
+												<img src="<?php echo get_template_directory_uri(); ?>/images/Group <?php echo rand(14, 43); ?>.png" alt="Icon">
+											</div>
+											<div class="article-text">
+												<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+												<p><?php the_excerpt(); ?></p> <!-- Display the excerpt -->
+											</div>
+										</div>
 									</div>
 
 									<?php endwhile;
@@ -106,12 +112,30 @@
 									<h3>READ UP</h3>
 									<div class="cardwrapper">
 										<div class="cardone">
-											<a href="#"><h4>All estate tax articles</h4>
-												<p>Start from the ground up. Review our primers, guides to specific structures, and detailed case studies</p></a>
+											<a href="#">
+												<div class="card-content">
+													<div class="card-icon">
+														<img src="<?php echo get_template_directory_uri(); ?>/images/Group 30.png" alt="Icon">
+													</div>
+													<div class="card-text">
+														<h4>All estate tax articles</h4>
+														<p>Start from the ground up. Review our primers, guides to specific structures, and detailed case studies</p>
+													</div>
+												</div>
+											</a>
 										</div>
 										<div class="cardone">
-											<a href="#"><h4>Estate tax video</h4>
-												<p>Check out our video series on planning to reduce your estate tax</p></a>
+											<a href="#">
+												<div class="card-content">
+													<div class="card-icon">
+														<img src="<?php echo get_template_directory_uri(); ?>/images/Group 31.png" alt="Icon">
+													</div>
+													<div class="card-text">
+														<h4>Estate tax video</h4>
+														<p>Check out our video series on planning to reduce your estate tax</p>
+													</div>
+												</div>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -137,7 +161,7 @@
 									<?php endif; ?>
 									<h1><?php the_title(); ?></h1>
 									<div><?php the_content(); ?></div>
-									<a href="<?php echo get_permalink(); ?>" class="read-more">Read More...</a>
+									<a href="<?php echo get_permalink(); ?>" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
 									<?php
 										}
 									} else {
@@ -183,8 +207,15 @@
 									while ( $featured_query->have_posts() ) : $featured_query->the_post(); ?>
 
 									<div class="featured-article">
-										<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-										<p><?php the_excerpt(); ?></p> <!-- Display the excerpt -->
+										<div class="article-content">
+											<div class="article-icon">
+												<img src="<?php echo get_template_directory_uri(); ?>/images/Group <?php echo rand(14, 43); ?>.png" alt="Icon">
+											</div>
+											<div class="article-text">
+												<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+												<p><?php the_excerpt(); ?></p> <!-- Display the excerpt -->
+											</div>
+										</div>
 									</div>
 
 									<?php endwhile;
@@ -206,12 +237,30 @@
 									<h3>READ UP</h3>
 									<div class="cardwrapper">
 										<div class="cardone">
-											<a href="#"><h4>All Capital Gains articles</h4>
-												<p>Start from the ground up. Review our primers, guides to specific structures, and detailed case studies</p></a>
+											<a href="#">
+												<div class="card-content">
+													<div class="card-icon">
+														<img src="<?php echo get_template_directory_uri(); ?>/images/Group 32.png" alt="Icon">
+													</div>
+													<div class="card-text">
+														<h4>All Capital Gains articles</h4>
+														<p>Start from the ground up. Review our primers, guides to specific structures, and detailed case studies</p>
+													</div>
+												</div>
+											</a>
 										</div>
 										<div class="cardone">
-											<a href="#"><h4>Capital Gains video</h4>
-												<p>Check out our video series on planning to reduce your Capital Gains</p></a>
+											<a href="#">
+												<div class="card-content">
+													<div class="card-icon">
+														<img src="<?php echo get_template_directory_uri(); ?>/images/Group 33.png" alt="Icon">
+													</div>
+													<div class="card-text">
+														<h4>Capital Gains video</h4>
+														<p>Check out our video series on planning to reduce your Capital Gains</p>
+													</div>
+												</div>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -237,7 +286,7 @@
 									<?php endif; ?>
 									<h1><?php the_title(); ?></h1>
 									<div><?php the_content(); ?></div>
-									<a href="<?php echo get_permalink(); ?>" class="read-more">Read More...</a>
+									<a href="<?php echo get_permalink(); ?>" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
 									<?php
 										}
 									} else {
@@ -283,8 +332,15 @@
 									while ( $featured_query->have_posts() ) : $featured_query->the_post(); ?>
 
 									<div class="featured-article">
-										<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-										<p><?php the_excerpt(); ?></p> <!-- Display the excerpt -->
+										<div class="article-content">
+											<div class="article-icon">
+												<img src="<?php echo get_template_directory_uri(); ?>/images/Group <?php echo rand(14, 43); ?>.png" alt="Icon">
+											</div>
+											<div class="article-text">
+												<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+												<p><?php the_excerpt(); ?></p> <!-- Display the excerpt -->
+											</div>
+										</div>
 									</div>
 
 									<?php endwhile;
@@ -306,12 +362,30 @@
 									<h3>READ UP</h3>
 									<div class="cardwrapper">
 										<div class="cardone">
-											<a href="#"><h4>All Ordinary income articles</h4>
-												<p>Start from the ground up. Review our primers, guides to specific structures, and detailed case studies</p></a>
+											<a href="#">
+												<div class="card-content">
+													<div class="card-icon">
+														<img src="<?php echo get_template_directory_uri(); ?>/images/Group 34.png" alt="Icon">
+													</div>
+													<div class="card-text">
+														<h4>All Ordinary income articles</h4>
+														<p>Start from the ground up. Review our primers, guides to specific structures, and detailed case studies</p>
+													</div>
+												</div>
+											</a>
 										</div>
 										<div class="cardone">
-											<a href="#"><h4>Capital Ordinary video</h4>
-												<p>Check out our video series on planning to reduce your Ordinary income</p></a>
+											<a href="#">
+												<div class="card-content">
+													<div class="card-icon">
+														<img src="<?php echo get_template_directory_uri(); ?>/images/Group 35.png" alt="Icon">
+													</div>
+													<div class="card-text">
+														<h4>Capital Ordinary video</h4>
+														<p>Check out our video series on planning to reduce your Ordinary income</p>
+													</div>
+												</div>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -337,7 +411,7 @@
 									<?php endif; ?>
 									<h1><?php the_title(); ?></h1>
 									<div><?php the_content(); ?></div>
-									<a href="<?php echo get_permalink(); ?>" class="read-more">Read More...</a>
+									<a href="<?php echo get_permalink(); ?>" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
 									<?php
 										}
 									} else {
@@ -382,8 +456,15 @@
 									while ( $featured_query->have_posts() ) : $featured_query->the_post(); ?>
 
 									<div class="featured-article">
-										<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-										<p><?php the_excerpt(); ?></p> <!-- Display the excerpt -->
+										<div class="article-content">
+											<div class="article-icon">
+												<img src="<?php echo get_template_directory_uri(); ?>/images/Group <?php echo rand(14, 43); ?>.png" alt="Icon">
+											</div>
+											<div class="article-text">
+												<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+												<p><?php the_excerpt(); ?></p> <!-- Display the excerpt -->
+											</div>
+										</div>
 									</div>
 
 									<?php endwhile;
@@ -405,12 +486,30 @@
 									<h3>READ UP</h3>
 									<div class="cardwrapper">
 										<div class="cardone">
-											<a href="#"><h4>All QSBS articles</h4>
-												<p>Start from the ground up. Review our primers, guides to specific structures, and detailed case studies</p></a>
+											<a href="#">
+												<div class="card-content">
+													<div class="card-icon">
+														<img src="<?php echo get_template_directory_uri(); ?>/images/Group 36.png" alt="Icon">
+													</div>
+													<div class="card-text">
+														<h4>All QSBS articles</h4>
+														<p>Start from the ground up. Review our primers, guides to specific structures, and detailed case studies</p>
+													</div>
+												</div>
+											</a>
 										</div>
 										<div class="cardone">
-											<a href="#"><h4>QSBS video</h4>
-												<p>Check out our video series on planning to reduce your QSBS</p></a>
+											<a href="#">
+												<div class="card-content">
+													<div class="card-icon">
+														<img src="<?php echo get_template_directory_uri(); ?>/images/Group 37.png" alt="Icon">
+													</div>
+													<div class="card-text">
+														<h4>QSBS video</h4>
+														<p>Check out our video series on planning to reduce your QSBS</p>
+													</div>
+												</div>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -436,7 +535,7 @@
 									<?php endif; ?>
 									<h1><?php the_title(); ?></h1>
 									<div><?php the_content(); ?></div>
-									<a href="<?php echo get_permalink(); ?>" class="read-more">Read More...</a>
+									<a href="<?php echo get_permalink(); ?>" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
 									<?php
 										}
 									} else {
